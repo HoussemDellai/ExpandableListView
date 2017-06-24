@@ -24,6 +24,11 @@
                         <StackLayout IsVisible="{Binding IsVisible}"
                                      Orientation="Horizontal"
                                      Margin="0,30,0,0">
+                            <Button Text="Details"
+                                    BackgroundColor="DarkGreen"
+                                    TextColor="White"
+                                    WidthRequest="100"
+                                    FontSize="24" />
                             <Button Text="Edit"
                                     BackgroundColor="DodgerBlue"
                                     TextColor="White"
@@ -33,12 +38,7 @@
                                     BackgroundColor="DarkRed"
                                     TextColor="White"
                                     WidthRequest="100"
-                                    FontSize="24"/>
-                            <Button Text="Favorit"
-                                    BackgroundColor="DarkGreen"
-                                    TextColor="White"
-                                    WidthRequest="100"
-                                    FontSize="24"/>
+                                    FontSize="24" />
                         </StackLayout>
                     </StackLayout>
                 </ViewCell>
