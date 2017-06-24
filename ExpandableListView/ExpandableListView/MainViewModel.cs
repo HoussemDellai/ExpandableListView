@@ -41,7 +41,7 @@ namespace ExpandableListView
             {
                 // click twice on the same item will hide it
                 product.IsVisible = !product.IsVisible;
-                UpdateProductView(product);
+                UpdateProducts(product);
             }
             else
             {
@@ -49,17 +49,17 @@ namespace ExpandableListView
                 {
                     // hide previous selected item
                     _oldProduct.IsVisible = false;
-                    UpdateProductView(_oldProduct);
+                    UpdateProducts(_oldProduct);
                 }
                 // show selected item
                 product.IsVisible = true;
-                UpdateProductView(product);
+                UpdateProducts(product);
             }
 
             _oldProduct = product;
         }
 
-        private void UpdateProductView(Product product)
+        private void UpdateProducts(Product product)
         {
             var index = Products.IndexOf(product);
             Products.Remove(product);
