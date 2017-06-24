@@ -5,6 +5,7 @@ namespace ExpandableListView
     public class MainViewModel
     {
         private Product _oldProduct;
+
         public ObservableCollection<Product> Products { get; set; }
 
         public MainViewModel()
